@@ -1,5 +1,4 @@
-camel = r"""
-The camel habitat...
+camel = r"""The camel habitat...
 ___.-''''-.
 /___ @ |
 ',,,,. | _.'''''''._
@@ -19,8 +18,7 @@ ___.-''''-.
 /_I L_I L_I /_I
 Look at that!"""
 
-lion = r"""
-The lion habitat...
+lion = r"""The lion habitat...
 ,w.
 ,YWMMw ,M ,
 _.---.._ __..---._.'MMMMMw,wMWmW,
@@ -37,8 +35,7 @@ WMMm__,-'.' / _.\ F'''-+,, ;_,_.dMMMMMMMM[,_ / `=_}
 (--, ) `,_ / `) \/"") ^" `-, -;"\:
 The lion is roaring!"""
 
-deer = r"""
-The deer habitat...
+deer = r"""The deer habitat...
 /| |\
 `__\\ //__'
 || ||
@@ -57,7 +54,7 @@ _.,:---;,._
 \ \ \ | /
 \_, \ / \ |\
 
-|';| |规律,,,,,,,/ \ \ \_
+|';| |,,,,,,,,/ \ \ \_
 | | | \ / |
 \ \ | | / \ |
 
@@ -68,8 +65,7 @@ _.,:---;,._
 /_//_/ /_/ /_/
 Pretty good!"""
 
-goose = r"""
-The goose habitat...
+goose = r"""The goose habitat...
  _
 ,-"" "".
 ,' ____ `.
@@ -83,8 +79,7 @@ The goose habitat...
 `------------------------------------------
 Beautiful!"""
 
-bat = r"""
-The bat habitat...
+bat = r"""The bat habitat...
 _________________ _________________
 ~-. \ |\___/| / .-~
 ~-. \ / o o \ / .-~
@@ -98,8 +93,7 @@ _________________ _________________
 V V
 It's doing fine."""
 
-rabbit = r"""
-The rabbit habitat...
+rabbit = r"""The rabbit habitat...
 ,
 /| __
 / | ,-~ /
@@ -123,16 +117,11 @@ It looks fine!"""
 
 animals = [camel, lion, deer, goose, bat, rabbit]
 
-# Головний цикл програми
 while True:
     user_input = input("Please enter the number of the habitat you would like to view: > ")
-
-    # Перевірка на команду виходу
     if user_input.strip() == "exit":
         print("See you later!")
         break
-
-    # Валідація та виведення тварини
     try:
         index = int(user_input)
         if 0 <= index < len(animals):
@@ -141,6 +130,4 @@ while True:
             print(f"Please enter a number between 0 and {len(animals) - 1}.")
     except ValueError:
         print("Invalid input. Please enter a number or 'exit'.")
-
-
 
