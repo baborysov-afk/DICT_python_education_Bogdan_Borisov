@@ -54,7 +54,7 @@ _.,:---;,._
 \ \ \ | /
 \_, \ / \ |\
 
-|';| |,,,,,,,,/ \ \ \_
+|';| |规律,,,,,,,/ \ \ \_
 | | | \ / |
 \ \ | | / \ |
 
@@ -130,4 +130,3 @@ while True:
             print(f"Please enter a number between 0 and {len(animals) - 1}.")
     except ValueError:
         print("Invalid input. Please enter a number or 'exit'.")
-
